@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import About from '../About';
+import Contacts from '../Contacts';
+
 import Header from '../Header';
 import Rate from '../Rate';
 import Footer from '../Footer';
@@ -14,13 +19,19 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <Router>
+          <Header />
 
-      <div className="container">
-        <main>
-          <Rate />
-        </main>
-      </div>
+          <div className="container">
+            <main>
+                <Switch>
+                  <Route exact path='/' component={Rate} />
+                  <Route exact path='/about' component={About} />
+                  <Route exact path='/contacts' component={Contacts} />
+                </Switch>
+            </main>
+          </div>
+        </Router>
 
       <div className="container" id="cookie_info">
           <div className="site-content">

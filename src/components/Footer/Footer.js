@@ -13,7 +13,7 @@ export default class Footer extends Component {
                     <div className="container">
                         <div className="flex-container">
                             <div className="flex-item">
-                                <h1 className="footer-title"><a href="https://itgid.info">2019 &copy; React. Lite Level</a></h1>
+                                <h1 className="footer-title">2021 &copy;</h1>
                                 <p> All Rights Reserved</p>
                             </div>
                             <div className="flex-item">
@@ -34,21 +34,6 @@ export default class Footer extends Component {
                                         <li><a href="/p">Соглашение о использовании сервиса</a></li>
                                     </ul>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="copyright-bar">
-                    <div className="flex-container">
-                        <div className="flex-item">
-                            <ul className="link"></ul>
-                        </div>
-                        <div className="flex-item">
-                            <div className="clearfix payment-methods">
-                                <ul>
-                                    <img src="/skin/default/images/dummy.png" data-toggle="tooltip" data-placement="top" data-original-title="www.webmoney.ru" alt="" />
-                                </ul>
                             </div>
                         </div>
                     </div>
